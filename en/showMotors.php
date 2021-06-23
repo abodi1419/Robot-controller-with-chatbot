@@ -11,6 +11,13 @@ include 'config/database.php';
 
 
     <div class="card-body text-center">
+        <?php
+        include 'getMotors.php';
+        if(!count($motors)):?>
+            <p>No Motors added yet! <a href="addMotor.php">Add now</a></p>
+        <?php
+        else:
+        ?>
         <table class="table table-responsive-sm text-center w-100">
             <thead>
             <tr>
@@ -23,7 +30,6 @@ include 'config/database.php';
             </thead>
             <tbody>
             <?php
-            include 'getMotors.php';
             foreach ($motors as $key => $motor) :
             ?>
                 <tr>
@@ -39,6 +45,7 @@ include 'config/database.php';
             <?php endforeach;?>
             </tbody>
         </table>
+        <?php endif; ?>
     </div>
     <div class="card-footer bg-white">
         <a href="addMotor.php" class="btn bg-transparent text-primary h-100 w-100"><i class="fa fa-plus fa-2x"></i></a>

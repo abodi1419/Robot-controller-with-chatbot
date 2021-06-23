@@ -83,10 +83,16 @@ include 'config/database.php';
 
 
         <div class="card-body text-center">
+            <?php
+            include 'getMotors.php';
+            if(!count($motors)):?>
+                <p>No Motors added yet! <a href="addMotor.php">Add now</a></p>
+            <?php
+            else:
+            ?>
             <div class="row justify-content-center align-items-center">
 
                 <?php
-                include 'getMotors.php';
                 foreach ($motors as $key => $motor):
                 ?>
                 <?php if($key%2==0): ?>
@@ -121,6 +127,7 @@ include 'config/database.php';
                     <div class="col-7 col-md-4 col-lg-5"></div>
                 <?php endif; ?>
             </div>
+            <?php endif; ?>
             <hr>
             <button class="btn bg-light-blue text-light my-btn m-1" id="save" onclick="save()">Save <i class="fa fa-save"></i></button>
             <button class="btn bg-light-blue text-light my-btn m-1" id="run" onclick="run(this)">
