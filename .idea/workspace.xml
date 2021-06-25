@@ -11,12 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03b3bdbf-3d38-4b72-90ea-3a42d9117a22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseControl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ar/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/ar/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ar/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ar/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ar/showMotors.php" beforeDir="false" afterPath="$PROJECT_DIR$/ar/showMotors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/en/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/en/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/showMotors.php" beforeDir="false" afterPath="$PROJECT_DIR$/en/showMotors.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +41,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/en" />
+    <property name="last_opened_file_path" value="$USER_HOME$/king.html" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ar" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ar" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ar" />
       <recent name="$PROJECT_DIR$/en" />
       <recent name="$PROJECT_DIR$/en/template" />
-      <recent name="$PROJECT_DIR$/ar" />
       <recent name="$PROJECT_DIR$/ar/template/js" />
       <recent name="$PROJECT_DIR$/ar/template/css" />
     </key>
@@ -69,7 +71,7 @@
       <workItem from="1623827779281" duration="5533000" />
       <workItem from="1624169812375" duration="11032000" />
       <workItem from="1624270441929" duration="2137000" />
-      <workItem from="1624293796636" duration="15650000" />
+      <workItem from="1624293796636" duration="25071000" />
     </task>
     <servers />
   </component>
@@ -89,22 +91,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1767" y="277" width="424" height="478" key="FileChooserDialogImpl" timestamp="1624293793762">
+    <state x="1767" y="277" width="424" height="478" key="FileChooserDialogImpl" timestamp="1624641301733">
       <screen x="0" y="0" width="2944" height="1040" />
     </state>
-    <state x="1767" y="277" width="424" height="478" key="FileChooserDialogImpl/0.0.2944.1040@0.0.2944.1040" timestamp="1624293793762" />
-    <state x="1802" y="446" width="354" height="147" key="NewPhpFileDialog" timestamp="1624456904282">
+    <state x="1767" y="277" width="424" height="478" key="FileChooserDialogImpl/0.0.2944.1040@0.0.2944.1040" timestamp="1624641301733" />
+    <state x="1802" y="446" width="354" height="147" key="NewPhpFileDialog" timestamp="1624641867590">
       <screen x="0" y="0" width="2944" height="1040" />
     </state>
-    <state x="1802" y="446" width="354" height="147" key="NewPhpFileDialog/0.0.2944.1040@0.0.2944.1040" timestamp="1624456904282" />
-    <state x="1648" y="238" key="run.anything.popup" timestamp="1623829243709">
+    <state x="1802" y="446" width="354" height="147" key="NewPhpFileDialog/0.0.2944.1040@0.0.2944.1040" timestamp="1624641867590" />
+    <state x="1648" y="238" key="run.anything.popup" timestamp="1624550798340">
       <screen x="0" y="0" width="2944" height="1040" />
     </state>
-    <state x="1648" y="238" key="run.anything.popup/0.0.2944.1040@0.0.2944.1040" timestamp="1623829243709" />
-    <state x="1647" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1624454866977">
+    <state x="1648" y="238" key="run.anything.popup/0.0.2944.1040@0.0.2944.1040" timestamp="1624550798340" />
+    <state x="1647" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1624643813863">
       <screen x="0" y="0" width="2944" height="1040" />
     </state>
-    <state x="1647" y="228" width="672" height="678" key="search.everywhere.popup/0.0.2944.1040@0.0.2944.1040" timestamp="1624454866977" />
+    <state x="1647" y="228" width="672" height="678" key="search.everywhere.popup/0.0.2944.1040@0.0.2944.1040" timestamp="1624643813863" />
     <state x="1709" y="434" width="540" height="166" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1623745758077">
       <screen x="0" y="0" width="2944" height="1040" />
     </state>

@@ -1,14 +1,6 @@
 <?php
 
-$connection = [
-    'host' => 'localhost',
-    'user' => 'smart-methods',
-    'password' => 'QxtfX4Z3gK8HLKb0',
-    'database' => 'smart-methods'
-];
-
-$mysql = new mysqli($connection['host'],$connection['user'],$connection['password'],$connection['database']);
-
+include '../database.php';
 if($mysql->connect_error){
-    die("Conecetion failed. Error ".$mysql->connect_error);
+    die("فشل الاتصال. خطأ ".$mysql->connect_error);
 }
