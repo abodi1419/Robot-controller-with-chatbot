@@ -267,7 +267,7 @@ include "template/footer.php";
 
     // Base controller
     var start = function start(e){
-
+        window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
         e=this;
         $.ajax({
             url: '../baseControl.php',
@@ -282,7 +282,7 @@ include "template/footer.php";
         });
     }
     var end = function end(e){
-
+        window.addEventListener("contextmenu", function(e) { })
         e=this
         $.ajax({
             url: '../baseControl.php',
@@ -295,6 +295,7 @@ include "template/footer.php";
                 }
             }
         });
+
     }
     if(!isMobile) {
         document.getElementById('forward').addEventListener("mousedown", start);

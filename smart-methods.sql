@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 23, 2021 at 05:26 PM
+-- Generation Time: Jun 30, 2021 at 11:44 PM
 -- Server version: 8.0.25-0ubuntu0.20.04.1
 -- PHP Version: 7.4.3
 
@@ -25,6 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `base-movement`
+--
+
+CREATE TABLE `base-movement` (
+  `id` int UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `value` tinyint UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `base-movement`
+--
+
+INSERT INTO `base-movement` (`id`, `name`, `value`) VALUES
+(1, 'forward', 1),
+(2, 'left', 0),
+(3, 'right', 0),
+(4, 'backward', 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `motors`
 --
 
@@ -40,10 +62,8 @@ CREATE TABLE `motors` (
 --
 
 INSERT INTO `motors` (`id`, `name`, `degree`, `value`) VALUES
-(21, 'Motor 1', 360, 360),
-(22, 'Motor 2', 180, 0),
-(23, 'Motor 3', 180, 180),
-(27, 'Motor 4', 180, 0);
+(33, 'Motor 1', 270, 100),
+(34, 'Motor 2', 360, 180);
 
 -- --------------------------------------------------------
 
@@ -67,6 +87,12 @@ INSERT INTO `settings` (`is_on`) VALUES
 --
 
 --
+-- Indexes for table `base-movement`
+--
+ALTER TABLE `base-movement`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `motors`
 --
 ALTER TABLE `motors`
@@ -78,10 +104,16 @@ ALTER TABLE `motors`
 --
 
 --
+-- AUTO_INCREMENT for table `base-movement`
+--
+ALTER TABLE `base-movement`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `motors`
 --
 ALTER TABLE `motors`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

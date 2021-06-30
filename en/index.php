@@ -255,7 +255,7 @@ include "template/footer.php"
     }
 
     var start = function start(e){
-
+        window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
         e=this;
         $.ajax({
             url: '../baseControl.php',
@@ -283,6 +283,7 @@ include "template/footer.php"
                 }
             }
         });
+        window.addEventListener("contextmenu", function(e) {})
     }
     if(!isMobile) {
         document.getElementById('forward').addEventListener("mousedown", start);
@@ -293,6 +294,7 @@ include "template/footer.php"
         document.getElementById('right').addEventListener("mouseup", end);
         document.getElementById('backward').addEventListener("mousedown", start);
         document.getElementById('backward').addEventListener("mouseup", end);
+
     }else {
         document.getElementById('forward').addEventListener("touchstart", start);
         document.getElementById('forward').addEventListener("touchend", end);
@@ -302,6 +304,9 @@ include "template/footer.php"
         document.getElementById('right').addEventListener("touchend", end);
         document.getElementById('backward').addEventListener("touchstart", start);
         document.getElementById('backward').addEventListener("touchend", end);
+
+
+
     }
 </script>
 

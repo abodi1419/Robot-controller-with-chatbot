@@ -1,5 +1,8 @@
 <?php
 if(isset($_GET)){
+    if(!isset($_GET['name']) || !isset($_GET['value'])){
+        die('Missing parameters!');
+    }
     include 'database.php';
     $name = mysqli_real_escape_string($mysql,$_GET['name']);
     $value = mysqli_real_escape_string($mysql,$_GET['value']);
